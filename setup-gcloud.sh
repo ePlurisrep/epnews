@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Script to setup Google Cloud authentication
 # This script runs gcloud auth login to authenticate with Google Cloud Platform
@@ -15,10 +16,7 @@ then
 fi
 
 echo "Running gcloud auth login..."
-gcloud auth login
-
-# Check if authentication was successful
-if [ $? -eq 0 ]; then
+if gcloud auth login; then
     echo ""
     echo "✓ Authentication successful!"
     echo ""
