@@ -19,7 +19,14 @@ This project can be deployed to Google Cloud Platform. To authenticate with Goog
 Run the setup script to authenticate with Google Cloud:
 
 ```bash
+chmod +x setup-gcloud.sh
 ./setup-gcloud.sh
+```
+
+Alternatively, run it directly with bash:
+
+```bash
+bash setup-gcloud.sh
 ```
 
 Or manually run:
